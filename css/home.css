@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@keyframes changeHeight{
+    0%{
+        height: 0vh;
+    }
+    100%{
+        height: 100vh;
+    }
+}
+
+@keyframes blinking{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+
+@keyframes rotateframe1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateframe2 {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(540deg);
+    }
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+    /* width: 0; */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    transition: all 0.25s;
+    max-height: 160vh;
+    /* animation: changeHeight 2s ease 1s; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.loader{
+    /* transition: none; */
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    /* background-color: #243642; */
+    width: 101vw;
+    height: 100vh;
+    border-bottom: 0.3vw solid white;
+    /* animation: changeHeight 1s ease; */
+}
+
+.loader .bar{
+    width: 16.67vw;
+    /* height: 100%; */
+    height: 0;
+    background-color: #243642;
+    /* animation: changeHeight 2s ease; */
+}
+
+
+/* main */
+
+main{
+    height: 86vh;
+    /* padding: px 0; */
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .intro{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+main .intro .left{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0vw;
+    /* align-items: center; */
+}
+main .intro .left h1{
+    color: white;
+    font-size: 3vw;;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main .intro .left h2{
+    font-size: 6vw;
+    color: white;
+}
+
+main .intro .left h2 span{
+    color: #F2E5BF;
+}
+
+
+main .intro .left .desc{
+    /* margin: 1vw 0; */
+    font-weight: 800;
+    color: white;
+    font-size: 1.5vw;
+    /* margin: 6vw 0 0 0; */
+    width: 85%;
+    /* margin: 0.5vw 0; */
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+main .intro .buttons{
+    
+    width: 28%;
+    margin: 1.5vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hire-me{
+    transition: all 0.25s;
+    background-color: #355f7a;
+    color: white;
+    /* margin: 0 1vw; */
+}
+
+#btn{
+    cursor: pointer;
+    padding: 0.7vw 1.5vw;
+    /* background: rgba(255, 255, 255, 0.2); */
+    border: 1px solid black;
+    border-radius: 9px;
+    /* color: white; */
+    font-size: 1vw;
+    font-weight: 600;
+    
+}
+
+.show-profile i{
+    margin: 0 0.35vw;
+    font-size: 1.1vw;
+}
+.hire-me:hover{
+    color: #355f7a;
+    background-color: white;
+}
+#btn :not(:hover){
+    transition: all 0.15s;
+}
+#btn:hover{
+    transition: all 0.15s;
+    transform: scale(1.1);
+}
+
+
+
+
+.opacity-0{
+    opacity: 0;
+}
+
+
+.container{
+    display: flex;
+    margin: 0vw 0;
+    white-space: pre;
+    /* height: 2.5vw; */
+}
+
+.text{
+    transition: none;
+    color: white;
+    font-size: 5vw;
+    font-weight: 1000;
+    /* color: #243642; */
+    color: #F2E5BF;
+}
+
+.blink{
+    transition: none;
+    /* height: 1.5vw; */
+    border: 0.3vw solid #F2E5BF;
+    margin: 1.4vw 6px;
+    padding: 2vw 0;
+    /* margin: 1vw 0; */
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: blinking 1s ease infinite; */
+
+}
+
+
+
+
+
+
+
+
+
+
+

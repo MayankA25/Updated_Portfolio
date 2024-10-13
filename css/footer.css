@@ -1,0 +1,71 @@
+footer{
+    background-color: black;
+    color: white;
+    padding: 2vw 1vw;
+    border-top: 0.3vw solid white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .footer h1{
+    font-size: 2.5vw;
+    margin: 1.25vw 0;
+}
+
+.icons{
+    display: flex;
+    width: 100vw;
+    padding: 1vw 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(25px);
+    position: sticky;
+    bottom: 0;
+    /* height: 2vh; */
+
+}
+
+.icons i{
+    font-size: 1.5vw;
+    margin: 0 1vw;
+    color: rgba(255, 255, 255, 0.404);
+    cursor: pointer;
+}
+
+
+.instagram:hover{
+    transition: all 0.25s;
+    color: rgb(255, 0, 200);
+    transform: scale(1.1);
+}
+
+.x:hover{
+    transition: all 0.25s;
+    color: white;
+    transform: scale(1.1);
+}
+
+.linkedin:hover{
+    transition: all 0.25s;
+    color: rgb(87, 87, 255);
+    transform: scale(1.1);
+}
+
+.github:hover{
+    transition: all 0.25s;
+    color: white;
+    transform: scale(1.1);
+}
