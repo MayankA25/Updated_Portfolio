@@ -49,9 +49,14 @@
     /* width: 0; */
 }
 
+::selection{
+    user-select: none;
+}
+
 *{
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 body{
     transition: all 0.25s;
@@ -115,6 +120,7 @@ main .intro .left{
     /* align-items: center; */
 }
 main .intro .left h1{
+    margin: -0.8vw 0;
     color: white;
     font-size: 3vw;;
     font-family: "Anton SC", sans-serif;
@@ -124,6 +130,7 @@ main .intro .left h1{
 
 main .intro .left h2{
     font-size: 6vw;
+    margin: -1vw 0 -2vw 0;
     color: white;
 }
 
@@ -133,7 +140,7 @@ main .intro .left h2 span{
 
 
 main .intro .left .desc{
-    /* margin: 1vw 0; */
+    margin: 1vw 0 0 0;
     font-weight: 800;
     color: white;
     font-size: 1.5vw;

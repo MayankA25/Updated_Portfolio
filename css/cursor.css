@@ -1,0 +1,32 @@
+
+.cursor{
+    position: absolute;
+    z-index: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.cursor .innerCursor{
+    background-color: #FD8B51;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 100px;
+    z-index: 400;
+
+
+}
+
+.cursor .outerCursor{
+    background-color: transparent;
+    border: 4px solid #CB6040;
+    /* backdrop-filter: blur(3px); */
+    width: 45px;
+    height: 45px;
+    z-index: 399;
+    position: absolute;
+    border-radius: 100px;
+    /* transform: translate(-50%, -50%); */
+}
