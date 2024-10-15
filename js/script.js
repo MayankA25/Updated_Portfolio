@@ -14,6 +14,12 @@ let div2 = document.getElementsByTagName("footer")[0]
 // let footer1 = document.getElementsByClassName("footer")[0]
 // let footer2 = document.getElementsByTagName("footer")[0]
 
+let showProfile = document.getElementsByClassName("show-profile")[0];
+
+showProfile.addEventListener("click", ()=>{
+    window.open("https://www.linkedin.com/in/mayank-arora-336256320/", "_blank")
+})
+
 
 
 
@@ -34,7 +40,7 @@ let changeBg = ()=>{
             }
             // array[i].style.background = "url('imgs/bg.jpg')"
             if(i == 0 && window.scrollY < 128){
-                array[i].style.background = "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),url('imgs/bg2.jpg')"
+                array[i].style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('imgs/bg2.jpg')"
                 array[i].style.backgroundSize = "cover";
                 array[i].style.backgroundRepeat = "no-repeat"
                 // array[i].style.transition = "all 1s"
@@ -81,7 +87,7 @@ let showBackgroundAnimation = ()=>{
     setTimeout(()=>{
         body.style.backgroundColor = "#243642"
         // loader.style.backgroundColor = "#243642"
-        loader.style.background = "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('imgs/bg2.jpg')"
+        loader.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('imgs/bg2.jpg')"
         // loader.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))"
         loader.style.backgroundRepeat = "no-repeat"
         loader.style.backgroundSize = "cover"

@@ -1,6 +1,6 @@
 
 .cursor{
-    position: absolute;
+    position: fixed;
     z-index: 500;
     display: flex;
     justify-content: center;
@@ -9,9 +9,9 @@
     pointer-events: none;
 }
 .cursor .innerCursor{
-    background-color: #FD8B51;
-    width: 15px;
-    height: 15px;
+    background-color: #ff00aa;
+    width: 10px;
+    height: 10px;
     position: absolute;
     border-radius: 100px;
     z-index: 400;
@@ -21,10 +21,10 @@
 
 .cursor .outerCursor{
     background-color: transparent;
-    border: 4px solid #CB6040;
+    border: 4px solid #be82fa;
     /* backdrop-filter: blur(3px); */
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     z-index: 399;
     position: absolute;
     border-radius: 100px;

@@ -70,13 +70,13 @@ header nav ul li{
     /* color: white; */
     font-weight: 800;
     position: relative;
+    transition: all 0.35s;
     
 }
 /* header nav ul li::after:not(:hover){
     animation: hoverlist 0.25s reverse;
 } */
 header nav ul li:hover{
-    /* transition: all 0.35s; */
     transform: scale(1.1);
 }
 header nav ul li a:hover{
