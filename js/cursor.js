@@ -8,6 +8,7 @@ let icons = document.querySelectorAll(".icons i");
 window.addEventListener("mousemove", (e)=>{
     let posX = e.clientX;
     let posY = e.clientY
+    // cursor.style.transition = "all 1s"
     innerCursor.style.transition = "all 0.06s"
     // outerCursor.style.transition = "all 0.09s"
     innerCursor.style.transform = `translate(${posX}px, ${posY}px)`
@@ -22,11 +23,11 @@ mouseEnter = (x)=>{
             // cursor.appendChild(plusCursor);
             // outerCursor.style.width = "55px";
             // outerCursor.style.height = "55px";
-            innerCursor.style.width = "15px";
-            innerCursor.style.height = "15px";
+            innerCursor.style.width = "0px";
+            innerCursor.style.height = "0px";
             // outerCursor.style.border = "4px solid #8000ff"
             innerCursor.style.backgroundColor = "#ff00aa";
-            innerCursor.style.display = "none";
+            // innerCursor.style.display = "none";
             // innerCursor.style.zIndex = -0.5
         })
 
