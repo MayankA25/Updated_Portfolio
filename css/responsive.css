@@ -1,0 +1,38 @@
+@media (width < 1300px){
+    .loader{
+        height: 90vh;
+    }
+    main{
+        height: 80vh;
+    }
+}
+
+@media (width < 1000px){
+    .loader{
+        height: 90vh;
+    }
+    main{
+        height: 72vh;
+    }
+}
+
+@media  (width<815px) {
+    .loader{
+        height: 75vh;
+    }
+    main{
+        height: 64vh;
+    }
+}
+
+@media (width < 475px){
+    .loader{
+        height: 70vh;
+    }
+}
+
+@media (width<205px){
+    .loader{
+        height: 68vh;
+    }
+}

@@ -71,6 +71,9 @@ header nav ul li{
     font-weight: 800;
     position: relative;
     transition: all 0.35s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 /* header nav ul li::after:not(:hover){

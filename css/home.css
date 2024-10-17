@@ -60,7 +60,7 @@
 }
 body{
     transition: all 0.25s;
-    max-height: 160vh;
+    /* max-height: 160vh; */
     /* animation: changeHeight 2s ease 1s; */
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -76,7 +76,7 @@ body{
     position: absolute;
     /* background-color: #243642; */
     width: 101vw;
-    height: 100vh;
+    height: 100%;
     border-bottom: 0.3vw solid white;
     /* animation: changeHeight 1s ease; */
 }
@@ -110,6 +110,7 @@ main .intro{
     /* justify-content: space-between; */
     /* align-items: center; */
     /* flex-direction: column; */
+    position: relative;
 }
 main .intro .left{
     height: 80%;
@@ -117,20 +118,23 @@ main .intro .left{
     flex-direction: column;
     justify-content: center;
     margin: 0 0vw;
+    position: absolute;
+    bottom: 12.5%;
     /* align-items: center; */
 }
 main .intro .left h1{
-    margin: -0.8vw 0;
+    /* margin: -0.8vw 0; */
     color: white;
     font-size: 3vw;;
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
     font-style: normal;
+    /* padding: 0.7vw 0; */
 }
 
 main .intro .left h2{
     font-size: 6vw;
-    margin: -1vw 0 -2vw 0;
+    /* margin: -1vw 0 -2vw 0; */
     color: white;
 }
 
