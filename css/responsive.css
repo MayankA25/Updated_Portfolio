@@ -1,4 +1,5 @@
 @media (width < 1300px){
+    
     .loader{
         height: 90vh;
     }
@@ -17,6 +18,9 @@
 }
 
 @media  (width<815px) {
+    body{
+        height: 100vh;
+    }
     .loader{
         height: 75vh;
     }

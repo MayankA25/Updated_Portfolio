@@ -15,6 +15,8 @@ let div2 = document.getElementsByTagName("footer")[0]
 // let footer2 = document.getElementsByTagName("footer")[0]
 
 let showProfile = document.getElementsByClassName("show-profile")[0];
+let footer = document.getElementsByTagName("footer")[0];
+let icons2 = document.getElementsByClassName("icons")[0];
 
 showProfile.addEventListener("click", ()=>{
     window.open("https://www.linkedin.com/in/mayank-arora-336256320/", "_blank")
@@ -53,11 +55,14 @@ let changeBg = ()=>{
 body.style.overflowY = "hidden"
 navbar.style.opacity = 0;
 main.style.display = "none"
+footer.style.opacity = 0
+icons2.style.opacity = 0;
 // div2.style.display = "none"
 
 let showPreloader = ()=>{
     body.style.transition = "none"
-    // body.style.overflow = "none"
+    body.style.overflow = "hidden"
+    // body.style.width = "100vw";
     setTimeout(()=>{
 
         preloader.style.animation = "slidePreloader 1s ease"
@@ -66,6 +71,8 @@ let showPreloader = ()=>{
     setTimeout(()=>{
         preloader.style.display = "none"
         body.style.overflowY = "visible"
+        footer.style.opacity = 1
+        icons2.style.opacity = 1
         
         // body.style.transition = "all 0.5s"
         // window.scrollTo(0,-window.scrollY);
@@ -86,6 +93,7 @@ let showBackgroundAnimation = ()=>{
         bars[i].style.animationDelay = `${i*animationDelay}s`
     }
     setTimeout(()=>{
+        // body.style.height = "50vh"
         body.style.backgroundColor = "#243642"
         // loader.style.backgroundColor = "#243642"
         loader.style.background = "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('imgs/bg3.jpg')"

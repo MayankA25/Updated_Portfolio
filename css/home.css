@@ -59,6 +59,8 @@
     cursor: none;
 }
 body{
+    /* height: 5; */
+    /* width: 99.4vw; */
     transition: all 0.25s;
     /* max-height: 160vh; */
     /* animation: changeHeight 2s ease 1s; */
@@ -66,6 +68,7 @@ body{
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     /* justify-content: center; */
 }
 
@@ -75,7 +78,7 @@ body{
     display: flex;
     position: absolute;
     /* background-color: #243642; */
-    width: 101vw;
+    width: 101%;
     height: 100%;
     border-bottom: 0.3vw solid white;
     /* animation: changeHeight 1s ease; */
