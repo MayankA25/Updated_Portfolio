@@ -57,6 +57,7 @@ main.style.display = "none"
 
 let showPreloader = ()=>{
     body.style.transition = "none"
+    // body.style.overflow = "none"
     setTimeout(()=>{
 
         preloader.style.animation = "slidePreloader 1s ease"

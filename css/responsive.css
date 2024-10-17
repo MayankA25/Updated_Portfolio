@@ -9,7 +9,7 @@
 
 @media (width < 1000px){
     .loader{
-        height: 90vh;
+        height: 85vh;
     }
     main{
         height: 72vh;
@@ -25,14 +25,20 @@
     }
 }
 
-@media (width < 475px){
+@media (width < 635px){
     .loader{
         height: 70vh;
     }
 }
 
+@media(width < 360px){
+    .loader{
+        height: 67vh;
+    }
+}
+
 @media (width<205px){
     .loader{
-        height: 68vh;
+        height: 65vh;
     }
 }
