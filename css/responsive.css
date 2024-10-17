@@ -11,9 +11,9 @@
     .loader{
         height: 85vh;
     }
-    main{
+    /* main{
         height: 72vh;
-    }
+    } */
 }
 
 @media  (width<815px) {
