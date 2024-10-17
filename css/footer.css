@@ -2,7 +2,7 @@ footer{
     background-color: black;
     width: 99%;
     color: white;
-    padding: 2vw 1vw;
+    padding: 0.5vw 1vw;
     border-top: 0.3vw solid white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -11,6 +11,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 2.85vw 0;
+    height: 25vw;
+    
     
     
 }
@@ -24,9 +27,16 @@ footer .footer{
 
 footer .footer h1{
     font-size: 2.5vw;
-    margin: 1.25vw 0;
+    margin: 1.5vw 0;
+    /* height: 2vw; */
 }
-
+footer .footer h3{
+    margin: 1.5vw 0;
+    font-size: 1.75vw ;
+}
+footer .footer button{
+    margin: 1.5vw 0;
+}
 .icons{
     display: flex;
     width: 101%;
@@ -35,7 +45,7 @@ footer .footer h1{
     align-items: center;
     background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(25px);
-    position: sticky;
+    position: fixed;
     bottom: 0;
     /* height: 2vh; */
 
